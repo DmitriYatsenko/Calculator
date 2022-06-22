@@ -46,12 +46,22 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h3>Compose Tweet</h3>
+      <h3>Calculate</h3>
       <form class="tweets" action="/tweets/" method="post" id="new-tweet-form">
-        <textarea class="fudge" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <textarea class="fudge" name="text" id="tweet-text" placeholder="0"></textarea>
         <div class="button">
-          <button type="submit">Tweet</button>
-          <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
+          <button type="submit">=</button>
+          <!-- <output id="counter" name="counter" class="counter" for="tweet-text">140</output> -->
+          <button type="button">0</button>
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button">6</button>
+          <button type="button">7</button>
+          <button type="button">8</button>
+          <button type="button">9</button>
         </div>
         <div class="error-text"></div>
       </form>
