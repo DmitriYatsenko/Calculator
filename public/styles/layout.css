@@ -4,13 +4,15 @@
  * Do not modify these two selectors, please
  */
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 body {
-  background-color: white;
+  height: 100%;
+  background-color: gold;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -31,7 +33,15 @@ body {
     width: 50%;
   }
 }
+
+.nav69 {
+  height: 20%;
+  background-color: yellow;
+}
+
 .container {
+  width: 69%;
+  height: 80%;
   color: #5dcae7;
   background-color: beige;
   text-align: center;

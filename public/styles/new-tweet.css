@@ -1,5 +1,6 @@
 .tweets {
-    width: 100%;
+    width: 69%;
+    height: 100%;
     color: #000000;
     background-color: tan;
     flex: 1;
@@ -17,12 +18,17 @@
 }
 
 .fudge {
-    background-color: orange;
+    background-color: saddlebrown;
     border: none;
     border-bottom: 1px solid;
     width: 100%;
-    height: 50px;
+    height: 50%;
 }
+
+/* .button {
+    width: 50%;
+    height: 50%;
+} */
 
 .postedtweet {
     background-color: #5dcae7;
@@ -79,11 +85,10 @@ article > footer {
 
 .button {
     width: 100%;
+    height: 50%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 100% 100% 100%;
-    /* grid-template-columns: 100px 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px; */
 }
 
 .posted {
