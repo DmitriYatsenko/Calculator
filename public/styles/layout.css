@@ -10,7 +10,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: #009ac5;
+  background-color: white;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -33,7 +33,7 @@ body {
 }
 .container {
   color: #5dcae7;
-  background-color: #5dcae7;
+  background-color: beige;
   text-align: center;
   margin: 0 auto;
   padding-top: 10px;
