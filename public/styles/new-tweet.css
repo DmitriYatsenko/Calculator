@@ -1,6 +1,6 @@
-.tweets {
+/* .tweets {
     width: 69%;
-    height: 100%;
+    height: 69%;
     color: #000000;
     background-color: tan;
     flex: 1;
@@ -15,10 +15,10 @@
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
-}
+} */
 
 .fudge {
-    background-color: saddlebrown;
+    background-color: tan;
     border: none;
     border-bottom: 1px solid;
     width: 100%;
@@ -30,7 +30,7 @@
     height: 50%;
 } */
 
-.postedtweet {
+/* .postedtweet {
     background-color: #5dcae7;
     border: none;
     border-bottom: 1px solid;
@@ -41,7 +41,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+} */
 
 article {
   border: 1px solid black;
@@ -88,20 +88,21 @@ article > footer {
     height: 50%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 100% 100% 100%;
+    grid-template-rows: 34% 33% 33%;
 }
 
-.posted {
-  width: 100%;
+/* .new-tweet {
+  width: 69%;
+  height: 69%;
   color: #000000;
-  background-color: beige;
+  background-color: orangered;
   flex: 1;
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 10px;
-}
+} */
 .posted:hover {
     box-shadow: 5px 5px 2px #0f0f0f;
 }

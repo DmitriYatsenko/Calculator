@@ -1,10 +1,5 @@
-.navbar {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
-    max-height: 120px;
-}
+/* .navbar {
+} */
 
 .title {
     width: 50%;
