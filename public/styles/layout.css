@@ -1,8 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   height: 100%;
   box-sizing: border-box;
@@ -14,18 +9,12 @@ body {
   height: 100%;
   background-color: gold;
   display: flex;
+  align-items: center;
   -webkit-flex-flow: row wrap;
   flex-flow: column
 }
 
-.header69, .container {
-  width: 100%;
-}
-
 @media (min-width: 1024px) {
-  .header69 {
-    width: 50%;
-  }
   .container {
     width: 50%;
   }
@@ -38,8 +27,40 @@ body {
   background-color: beige;
   text-align: center;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.title {
+  width: 69%;
+  color: #fa5a02;
+  background-color: #5dcae7;
+  flex: 1;
+  display: flex;
+  font-size:  min(5vw, 50px);
+  font-family: 'Bungee', Courier, monospace;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.fudge {
+  background-color: tan;
+  border: none;
+  border-bottom: 1px solid;
+  width: 100%;
+  height: 50%;
+}
+
+.button {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 34% 33% 33%;
 }
