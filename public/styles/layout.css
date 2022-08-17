@@ -7,7 +7,7 @@ html {
 }
 body {
   height: 100%;
-  background-color: gold;
+  background-color: #5dcae7;
   display: flex;
   align-items: center;
   -webkit-flex-flow: row wrap;
@@ -23,7 +23,6 @@ body {
 .container {
   width: 69%;
   height: 80%;
-  color: #5dcae7;
   background-color: beige;
   text-align: center;
   margin: 0 auto;
@@ -36,7 +35,7 @@ body {
 .title {
   width: 69%;
   color: #fa5a02;
-  background-color: #5dcae7;
+  background-color: orange;
   flex: 1;
   display: flex;
   font-size:  min(5vw, 50px);
@@ -63,4 +62,9 @@ body {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 34% 33% 33%;
+}
+
+.duck {
+  color: #fa5a02;
+  background-color: #5dcae7;
 }
