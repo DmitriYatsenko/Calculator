@@ -67,4 +67,6 @@ body {
 .duck {
   color: #fa5a02;
   background-color: #5dcae7;
+  border: none;
+  border: 1px solid;
 }
