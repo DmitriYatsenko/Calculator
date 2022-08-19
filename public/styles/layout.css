@@ -65,8 +65,12 @@ body {
 }
 
 .duck {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 300%;
+  font-weight: 900;
   color: #fa5a02;
   background-color: #5dcae7;
   border: none;
   border: 1px solid;
+  border-color: gray;
 }
