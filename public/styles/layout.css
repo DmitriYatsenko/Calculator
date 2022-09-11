@@ -56,11 +56,18 @@ body {
   height: 50%;
 }
 
-::placeholder {
+textarea {
   color: #fa5a02;
   font-family: 'Courier New', Courier, monospace;
   font-size: 300%;
   font-weight: 1000;
+}
+
+::placeholder {
+  color: #fa5a02;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-size: 300%;
+  font-weight: 1000; */
 }
 
 .button {
