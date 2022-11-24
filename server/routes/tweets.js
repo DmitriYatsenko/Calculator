@@ -1,46 +1,32 @@
-"use strict";
+const calculator = document.querySelector(‘.calculator’)
+const keys = calculator.querySelector(‘.calculator__keys’)
+const key = e.target
+const action = key.dataset.action
 
-const userHelper = require("../lib/util/user-helper")
-
-const express = require('express');
-const tweetsRoutes = express.Router();
-
-module.exports = function (DataHelpers) {
-
-  tweetsRoutes.get("/", function (req, res) {
-    DataHelpers.getTweets((err, tweets) => {
-      if (err) {
-        res.status(500).json({ error: err.message });
-      } else {
-        res.json(tweets);
-      }
-    });
-  });
-
-  tweetsRoutes.post("/", function (req, res) {
-    if (!req.body.text) {
-      res.status(400).json({ error: 'invalid request: no data in POST body' });
-      return;
-    }
-
-    const user = req.body.user ? req.body.user : userHelper.generateRandomUser();
-    const tweet = {
-      user: user,
-      content: {
-        text: req.body.text
-      },
-      created_at: Date.now()
-    };
-
-    DataHelpers.saveTweet(tweet, (err) => {
-      if (err) {
-        res.status(500).json({ error: err.message });
-      } else {
-        res.status(201).send();
-      }
-    });
-  });
-
-  return tweetsRoutes;
-
-}
+keys.addEventListener(‘click’, e => {
+  if (e.target.matches(‘button’)) {
+    // Do something
+  }
+  if (!action) {
+    console.log('number key!')
+  }
+  if (
+    action === 'add' ||
+    action === 'subtract' ||
+    action === 'multiply' ||
+    action === 'divide'
+  ) {
+    console.log('operator key!')
+  }
+  if (action === 'decimal') {
+    console.log('decimal key!')
+  }
+  
+  if (action === 'clear') {
+    console.log('clear key!')
+  }
+  
+  if (action === 'calculate') {
+    console.log('equal key!')
+  }
+})

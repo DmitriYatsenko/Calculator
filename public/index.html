@@ -1,63 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="container">
+  <div class="calculator">
+    <div class="calculator__display">0</div>
 
-<head>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-  <title>Calculator</title>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- App CSS -->
-  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-  <!-- External JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
-    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- <script src="dist/timeago.js" type="text/javascript"></script> -->
-
-  <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js"></script>
-  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-</head>
-
-<body>
-  <!-- Top nav bar (fixed) -->
-  <div class="title">
-    <span>Calculator</span>
-  </div>
-
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <textarea class="fudge" name="text" id="tweet-text" placeholder="0"></textarea>
-    <div class="button">
-      <button type="submit" class="duck">=</button>
-      <button type="button" class="duck">+</button>
-      <button type="button" class="duck">-</button>
-      <button type="button" class="duck">×</button>
-      <button type="button" class="duck">/</button>
-      <button type="button" class="duck">0</button>
-      <button type="button" class="duck">1</button>
-      <button type="button" class="duck">2</button>
-      <button type="button" class="duck">3</button>
-      <button type="button" class="duck">4</button>
-      <button type="button" class="duck">5</button>
-      <button type="button" class="duck">6</button>
-      <button type="button" class="duck">7</button>
-      <button type="button" class="duck">8</button>
-      <button type="button" class="duck">9</button>
+    <div class="calculator__keys">
+      <button class="key--operator" data-action="add">+</button>
+      <button class="key--operator" data-action="subtract">-</button>
+      <button class="key--operator" data-action="multiply">&times;</button>
+      <button class="key--operator" data-action="divide">÷</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>0</button>
+      <button data-action="decimal">.</button>
+      <button data-action="clear">AC</button>
+      <button class="key--equal" data-action="calculate">=</button>
     </div>
-    <div class="error-text"></div>
-  </main>
-</body>
-
-</html>
+  </div>
+</div>
